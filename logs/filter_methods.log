@@ -1,0 +1,30 @@
+2026-04-05 15:23:30,861 - INFO - before X_train_num : (5634, 4) 
+ : Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')
+2026-04-05 15:23:30,862 - INFO - before X_test_num : (1409, 4) 
+ : Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')
+2026-04-05 15:23:30,964 - INFO - 
+Mutual Information Scores:
+                   Feature  MI Score
+3              tenure_trim  0.070321
+2  TotalChargesreplaced_qt  0.045252
+1        MonthlyCharges_qt  0.043866
+0            SeniorCitizen  0.009384
+2026-04-05 15:23:30,965 - INFO - Number of good columns are : 3 
+ : ['tenure_trim', 'TotalChargesreplaced_qt', 'MonthlyCharges_qt']
+2026-04-05 15:23:30,965 - INFO - Number of bad columns are : 1 
+ : ['SeniorCitizen']
+2026-04-05 15:23:30,966 - INFO - After X_train_num : (5634, 3) 
+ : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim'], dtype='str')
+2026-04-05 15:23:30,966 - INFO - After X_test_num : (1409, 3) 
+ : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim'], dtype='str')
+2026-04-05 15:23:30,966 - INFO -  HYPOTHESIS TESTING
+2026-04-05 15:23:30,967 - INFO - Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim'], dtype='str')
+2026-04-05 15:23:30,967 - INFO - ['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim']
+2026-04-05 15:23:30,968 - INFO - After X_train_num : (5634, 3) 
+ : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim'], dtype='str')
+2026-04-05 15:23:30,968 - INFO - After X_test_num : (1409, 3) 
+ : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim'], dtype='str')

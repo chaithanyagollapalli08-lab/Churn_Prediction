@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Machine Learning-Based Customer Churn Prediction System</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #0f172a;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.05);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e3a8a;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    gap: 25px;
+}
+
+/* GLASS */
+.glass {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.04);
+    border: 1px solid #1e3a8a;
+    box-shadow: 0 0 10px rgba(30,58,138,0.2);
+}
+
+/* LEFT */
+.left-box {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sim-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #334155;
+}
+
+/* LOGOS */
+.logo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-grid img {
+    width: 80%;
+    height: 90px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo-grid img:hover {
+    transform: scale(1.05);
+}
+
+.logo-grid img.selected {
+    border: 3px solid #1e3a8a;
+}
+
+/* RIGHT */
+.right-box {
+    flex: 1;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+label {
+    font-size: 12px;
+    color: #334155;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: white;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #172554;
+}
+
+/* RESULT */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background: #1e3a8a; /* same as button */
+    color: white;        /* text visible */
+    font-weight: bold;
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>📊🤖Machine Learning-Based Customer Churn Prediction System</h2>
+
+<form method="POST">
+
+<div class="main">
+
+<!-- LEFT -->
+<div class="glass left-box">
+<div class="sim-title">Select SIM Provider</div>
+
+<div class="logo-grid">
+<img src="{{ url_for('static', filename='images/jio_logo.png') }}" data-value="Jio">
+<img src="{{ url_for('static', filename='images/airtel_logo.png') }}" data-value="Airtel">
+<img src="{{ url_for('static', filename='images/vi_logo.png') }}" data-value="Vodafone">
+<img src="{{ url_for('static', filename='images/bsnl_logo.png') }}" data-value="BSNL">
+</div>
+
+<input type="hidden" name="SIM_provider" id="SIM_provider">
+</div>
+
+<!-- RIGHT -->
+<div class="glass right-box">
+<div class="grid">
+
+<div>
+<label>Monthly Charges</label>
+<input type="number" name="MonthlyCharges" required>
+</div>
+
+<div>
+<label>Total Charges</label>
+<input type="number" name="TotalCharges" required>
+</div>
+
+<div>
+<label>Tenure</label>
+<input type="number" name="tenure" required>
+</div>
+
+<div>
+<label>Gender</label>
+<select name="gender" required>
+<option value="" disabled selected>Select</option>
+<option value="0">Male</option>
+<option value="1">Female</option>
+</select>
+</div>
+
+<div>
+<label>Partner</label>
+<select name="Partner" required>
+<option value="" disabled selected>Select</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+</div>
+
+<div>
+<label>Dependents</label>
+<select name="Dependents" required>
+<option value="" disabled selected>Select</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+</div>
+
+<div>
+<label>Phone Service</label>
+<select name="PhoneService" required>
+<option value="" disabled selected>Select</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+</div>
+
+<div>
+<label>Paperless Billing</label>
+<select name="PaperlessBilling" required>
+<option value="" disabled selected>Select</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+</div>
+
+<div>
+<label>Multiple Lines</label>
+<select name="MultipleLines" required>
+<option value="" disabled selected>Select</option>
+<option>No phone service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Internet Service</label>
+<select name="InternetService" required>
+<option value="" disabled selected>Select</option>
+<option>DSL</option>
+<option>Fiber optic</option>
+<option>No</option>
+</select>
+</div>
+
+<div>
+<label>Online Security</label>
+<select name="OnlineSecurity" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Online Backup</label>
+<select name="OnlineBackup" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Device Protection</label>
+<select name="DeviceProtection" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Tech Support</label>
+<select name="TechSupport" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Streaming TV</label>
+<select name="StreamingTV" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Streaming Movies</label>
+<select name="StreamingMovies" required>
+<option value="" disabled selected>Select</option>
+<option>No internet service</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Contract</label>
+<select name="Contract" required>
+<option value="" disabled selected>Select</option>
+<option value="0">Month-to-month</option>
+<option value="1">One year</option>
+<option value="2">Two year</option>
+</select>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<button type="submit"> Predict Churn</button>
+
+</form>
+
+{% if result %}
+<div class="result">{{ result }}</div>
+{% endif %}
+
+</div>
+
+<script>
+const logos = document.querySelectorAll('.logo-grid img');
+const simInput = document.getElementById('SIM_provider');
+
+logos.forEach(logo => {
+    logo.addEventListener('click', () => {
+        logos.forEach(l => l.classList.remove('selected'));
+        logo.classList.add('selected');
+        simInput.value = logo.dataset.value;
+    });
+});
+</script>
+
+</body>
+</html>

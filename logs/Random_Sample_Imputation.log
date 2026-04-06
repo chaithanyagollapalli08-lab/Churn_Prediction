@@ -1,0 +1,108 @@
+2026-04-05 15:23:30,793 - INFO - Before Handling NUll values X_train Column names and shape : (5634, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM_provider'],
+      dtype='str') : gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        10
+SIM_provider         0
+dtype: int64
+2026-04-05 15:23:30,795 - INFO - Before Handling NUll values X_test Column names and shape : (1409, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM_provider'],
+      dtype='str') : gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        1
+SIM_provider        0
+dtype: int64
+2026-04-05 15:23:30,808 - INFO - After Handling NUll values X_train Column names and shape : (5634, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'SIM_provider', 'TotalChargesreplaced'],
+      dtype='str') : gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+SIM_provider            0
+TotalChargesreplaced    0
+dtype: int64
+2026-04-05 15:23:30,811 - INFO - After Handling NUll values X_test Column names and shape : (1409, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'SIM_provider', 'TotalChargesreplaced'],
+      dtype='str') : gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+SIM_provider            0
+TotalChargesreplaced    0
+dtype: int64

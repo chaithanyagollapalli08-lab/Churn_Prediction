@@ -1,0 +1,21 @@
+2026-04-05 15:23:30,822 - INFO - Before Train Column Name : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str')
+2026-04-05 15:23:30,822 - INFO - Before Test Column Name : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str')
+2026-04-05 15:23:30,855 - INFO - After Train Column Name : Index(['SeniorCitizen', 'tenure_yeo', 'MonthlyCharges_qt',
+       'TotalChargesreplaced_qt'],
+      dtype='str')
+2026-04-05 15:23:30,855 - INFO - AFter Test Column Name : Index(['SeniorCitizen', 'tenure_yeo', 'MonthlyCharges_qt',
+       'TotalChargesreplaced_qt'],
+      dtype='str')
+2026-04-05 15:23:30,855 - INFO - ###################################################
+2026-04-05 15:23:30,855 - INFO - Before Train Column Name : Index(['SeniorCitizen', 'tenure_yeo', 'MonthlyCharges_qt',
+       'TotalChargesreplaced_qt'],
+      dtype='str')
+2026-04-05 15:23:30,856 - INFO - Before Test Column Name : Index(['SeniorCitizen', 'tenure_yeo', 'MonthlyCharges_qt',
+       'TotalChargesreplaced_qt'],
+      dtype='str')
+2026-04-05 15:23:30,861 - INFO - After Trimming Train Columns: Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')
+2026-04-05 15:23:30,861 - INFO - After Trimming Test Columns: Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')

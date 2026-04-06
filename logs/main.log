@@ -1,0 +1,194 @@
+2026-04-05 15:23:30,761 - INFO - total data size (7043, 21)
+2026-04-05 15:23:30,765 - INFO - total data size (7043, 22)
+2026-04-05 15:23:30,772 - INFO - total null values : gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+Churn                0
+SIM_provider         0
+dtype: int64
+2026-04-05 15:23:30,772 - INFO - (7043, 21)
+2026-04-05 15:23:30,781 - INFO - X_train size: 5634
+, y_train size: 5634
+,total train size:(5634, 20)
+2026-04-05 15:23:30,781 - INFO - X_test size: 1409
+, y_test size: 1409
+,total test size:(1409, 20)
+2026-04-05 15:23:30,785 - INFO - Before Handling NUll values X_train Column names and shape : (5634, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM_provider'],
+      dtype='str') : gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        10
+SIM_provider         0
+dtype: int64
+2026-04-05 15:23:30,788 - INFO - Before Handling NUll values X_test Column names and shape : (1409, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM_provider'],
+      dtype='str') : gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        1
+SIM_provider        0
+dtype: int64
+2026-04-05 15:23:30,818 - INFO - After Handling NUll values X_train Column names and shape : (5634, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'SIM_provider', 'TotalChargesreplaced'],
+      dtype='str') : gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+SIM_provider            0
+TotalChargesreplaced    0
+dtype: int64
+2026-04-05 15:23:30,820 - INFO - After Handling NUll values X_test Column names and shape : (1409, 20) 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'SIM_provider', 'TotalChargesreplaced'],
+      dtype='str') : gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+SIM_provider            0
+TotalChargesreplaced    0
+dtype: int64
+2026-04-05 15:23:30,821 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str'): (5634, 4)
+2026-04-05 15:23:30,821 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str') : (1409, 4)
+2026-04-05 15:23:30,821 - INFO - ======================================================
+2026-04-05 15:23:30,821 - INFO - Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'SIM_provider'],
+      dtype='str') : (5634, 16)
+2026-04-05 15:23:30,821 - INFO - Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'SIM_provider'],
+      dtype='str') : (1409, 16)
+2026-04-05 15:23:30,821 - INFO - Before Transformation Train Columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str')
+2026-04-05 15:23:30,822 - INFO - Before Transformation Test Columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalChargesreplaced'], dtype='str')
+2026-04-05 15:23:30,861 - INFO - after Train Column Name : Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')
+2026-04-05 15:23:30,861 - INFO - after Test Column Name : Index(['SeniorCitizen', 'MonthlyCharges_qt', 'TotalChargesreplaced_qt',
+       'tenure_trim'],
+      dtype='str')
+2026-04-05 15:23:31,037 - INFO - Training data columns : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim', 'gender',
+       'Partner', 'Dependents', 'PhoneService', 'PaperlessBilling',
+       'SIM_provider', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'Contract_odinal'],
+      dtype='str') and its shape : (5634, 29)
+2026-04-05 15:23:31,037 - INFO - testing data columns : Index(['MonthlyCharges_qt', 'TotalChargesreplaced_qt', 'tenure_trim', 'gender',
+       'Partner', 'Dependents', 'PhoneService', 'PaperlessBilling',
+       'SIM_provider', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'Contract_odinal'],
+      dtype='str') and its shape : (1409, 29)
+2026-04-05 15:23:31,038 - INFO - Number of Rows for Good Customer 1 : 1496
+2026-04-05 15:23:31,039 - INFO - Number of Rows for Bad Customer 0 : 4138
+2026-04-05 15:23:31,039 - INFO - Training data size : (5634, 29)
+2026-04-05 15:23:32,821 - INFO - Number of Rows for Good Customer 1 : 4138
+2026-04-05 15:23:32,822 - INFO - Number of Rows for Bad Customer 0 : 4138
+2026-04-05 15:23:32,822 - INFO - Training data size : (8276, 29)
