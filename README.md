@@ -49,7 +49,7 @@ This project aims to predict whether a customer will churn or stay using Machine
     <li><b>Total Features:</b> 20+ attributes</li>
 </ul>
 
-<h3>📌 Key Features:</h3>
+<h3> Key Features:</h3>
 <ul>
     <li>Gender</li>
     <li>Senior Citizen</li>
@@ -64,7 +64,7 @@ This project aims to predict whether a customer will churn or stay using Machine
 
 <h2>🛠️ Tech Stack</h2>
 <ul>
-    <li>Python 🐍</li>
+    <li>Python </li>
     <li>Pandas & NumPy</li>
     <li>Scikit-learn</li>
     <li>Matplotlib & Seaborn</li>
@@ -155,25 +155,17 @@ The final Logistic Regression model effectively predicts customer churn and help
 
 <h2>📊 Business Impact</h2>
 <ul>
-    <li>📱 Telecom industry</li>
-    <li>🏦 Banking sector</li>
-    <li>💻 SaaS platforms</li>
-    <li>📦 Subscription-based businesses</li>
+    <li>Telecom industry</li>
+    <li>Banking sector</li>
+    <li>SaaS platforms</li>
+    <li>Subscription-based businesses</li>
 </ul>
 
-<h2>💡 Final Thought</h2>
+<h2> Final Thought</h2>
 <blockquote>
 Sometimes the most valuable customer is not the one you acquire… but the one you prevent from leaving.
 </blockquote>
 
-<h2>⭐ Support This Project</h2>
-<ul>
-    <li>⭐ Give this repository a star</li>
-    <li>🍴 Fork it and improve it</li>
-    <li>📌 Save it for future reference</li>
-    <li>💬 Share feedback or suggestions</li>
-    <li>🚀 Connect for ML/Data Science collaboration</li>
-</ul>
 
 <h2>🔗 Project Repository</h2>
 <p>[Add your GitHub link here]</p>
