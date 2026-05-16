@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Telecom Customer Churn Prediction</title>
+    
 </head>
 <body>
 
