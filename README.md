@@ -168,7 +168,7 @@ Sometimes the most valuable customer is not the one you acquire… but the one y
 
 
 <h2>🔗 Project Repository</h2>
-<p>[Add your GitHub link here]</p>
+<p>https://github.com/chaithanyagollapalli08-lab/Churn_Prediction</p>
 
 </body>
-</html># Churn_Prediction
+</html>
